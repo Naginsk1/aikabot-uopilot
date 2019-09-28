@@ -1,6 +1,6 @@
 Repeat 10                         //repete 10 vezes
    :main                          //main script part
- if 163, 48 1051804             //identifica se seu personagem esta saudavel
+ if 163, 46 2170962               //identifica se seu personagem esta saudavel
        send tab                   //proximo target
 /////////////////////////// COMANDO DO BOT DE ATAQUE ///////////////////////////
            Repeat  8
@@ -10,23 +10,26 @@ Repeat 10                         //repete 10 vezes
  /////////////////////////// FIM DO IF ///////////////////////////
   end_if
 /////////////////////////// ESTIVER LOW ///////////////////////////
- if 162, 48  1775684        //identifica se seu personagem esta saudavel
+ if 162, 46   2170962             //identifica se seu personagem esta saudavel
        send tab
        while 162, 48  1775684     //se identificar ele executa o comando
        Repeat 10
         send 3                    //Inspirar Matanca
-        send 1
-        send 2                    //Andar para Frente
+        move 969, 603             // POSICAO CENTRO DA TELA
+        send 4                    // DETONACAO
+        send l_click              // CLICK MOUSE
+        send 5                    // NAPALM
+        send l_mouse              // CLICK MOUSE
         end_repeat
         end_while
  end_if
 /////////////////////////// FECHAR CTE ///////////////////////////
-          send ss
-          send esc
+          send ss                 // Voltar para o local de origem
+          send esc                // fechar itens ou interferencias
 /////////////////////////// USAR ITEM DO EVENTO ///////////////////////////
-          send 4  //
+          send 4                  // Usar item do evento
 End_Repeat
 
 
 
-///////////// LEMBRANDO QUE OS (IF E WHILE) HÁ DE REPOSICIONAR OS PIXELS.
+///////////// LEMBRANDO QUE OS (IF E WHILE E MOVE) HÁ DE REPOSICIONAR OS PIXELS
