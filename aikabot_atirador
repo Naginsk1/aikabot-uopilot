@@ -1,4 +1,4 @@
- if 163, 46 2170962                   //identifica se seu personagem esta saudavel
+if 163, 46 2170962                   //identifica se seu personagem esta saudavel
             send tab                  //proximo target
 /////////////////////////// COMANDO DO BOT DE ATAQUE ///////////////////////////
         set linedelay 1000
@@ -29,9 +29,7 @@ end_if
             send esc                  // Fechar CTE
 /////////////////////////// USAR ITEM DO EVENTO ///////////////////////////
             send 4                    // Usar item do evento
-
 /////////////////////////// BUFFS ///////////////////////////
-
 while 937, 981 531252                 // LINKAR NAS SKILLS O VISAO ACURADA
     set linedelay 2000
             send F2                   // Najmun
@@ -43,5 +41,4 @@ while 937, 981 531252                 // LINKAR NAS SKILLS O VISAO ACURADA
             send F7                   // Protecao da Deusa
             send F8                   // Gato Preto
 end_while
-
 ///////////// LEMBRANDO QUE OS (IF E WHILE E MOVE) HÁ DE REPOSICIONAR OS PIXELS
