@@ -15,11 +15,10 @@ Repeat 10                         //repete 10 vezes
        while 162, 48  1775684     //se identificar ele executa o comando
        Repeat 10
         send 3                    //Inspirar Matanca
-        move 969, 603             // POSICAO CENTRO DA TELA
-        send 4                    // DETONACAO
-        send l_click              // CLICK MOUSE
-        send 5                    // NAPALM
-        send l_mouse              // CLICK MOUSE
+        send 5                    // DETONACAO
+        double_left 956, 556      // CLICK MOUSE
+        send 6                    // NAPALM
+        double_left 956, 556      // CLICK MOUSE
         end_repeat
         end_while
  end_if
@@ -29,6 +28,7 @@ Repeat 10                         //repete 10 vezes
 /////////////////////////// USAR ITEM DO EVENTO ///////////////////////////
           send 4                  // Usar item do evento
 End_Repeat
+ 
 
 
 
