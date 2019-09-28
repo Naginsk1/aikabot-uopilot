@@ -1,45 +1,47 @@
-Repeat 10                         //repete 10 vezes
-   :main                          //main script part
- if 163, 46 2170962               //identifica se seu personagem esta saudavel
-       send tab                   //proximo target
+ if 163, 46 2170962                   //identifica se seu personagem esta saudavel
+            send tab                  //proximo target
 /////////////////////////// COMANDO DO BOT DE ATAQUE ///////////////////////////
-           Repeat  8
-      send 1                      //Tiro padrao
-        send 2                    //Andar para Frente
-          End_Repeat
- /////////////////////////// FIM DO IF ///////////////////////////
-  end_if
+        set linedelay 1000
+            send 1
+        set linedelay 100
+    Repeat  4
+            send 1                    //Tiro padrao
+            send 2                    //Andar para Frente
+    End_Repeat
+end_if
 /////////////////////////// ESTIVER LOW ///////////////////////////
- if 162, 46   2170962             //identifica se seu personagem esta saudavel
-       send tab
-       while 162, 48  1775684     //se identificar ele executa o comando
-       Repeat 10
-        send 3                    // INSPIRAR MATANCA
-        send 5                    // DETONACAO
-        double_left 956, 556      // CLICK MOUSE
-        send 6                    // NAPALM
-        double_left 956, 556      // CLICK MOUSE
+if 162, 46   2170962                  //identifica se seu personagem esta saudavel
+            send tab
+    while 162, 48  1775684            //se identificar ele executa o comando
+            send 3                    // INSPIRAR MATANCA
+            send 5                    // DETONACAO
+            double_left 956, 556      // CLICK MOUSE
+            send 6                    // NAPALM
+            double_left 956, 556      // CLICK MOUSE
+        Repeat 2
+            send 1                    //Tiro padrao
+            send 2                    //Andar para Frente
         end_repeat
-        end_while
- end_if
-/////////////////////////// FECHAR CTE ///////////////////////////
-          send ss                 // Voltar para o local de origem
-          send esc                // fechar itens ou interferencias
+    end_while
+end_if
+/////////////////////////// DAR BACK E FECHAR CTE ///////////////////////////
+            send s                    // Voltar para o local de origem
+            send esc                  // Fechar CTE
 /////////////////////////// USAR ITEM DO EVENTO ///////////////////////////
-          send 4                  // Usar item do evento
-End_Repeat
+            send 4                    // Usar item do evento
 
 /////////////////////////// BUFFS ///////////////////////////
 
-while 1890, 261 16579836          // LINKAR NO VISAO ACURADA
-set linedelay 2000
-send F2                           // Najmun
-send F3                           // Precisao
-send F4                           // Visao Acurada
-set linedelay 1000
-send F5                           // Pocao da Destruicao
-send F6                           // Pocao da Defesa
-send F7                           // Protecao da Deusa
-send F8                           // Gato Preto
+while 937, 981 531252                 // LINKAR NAS SKILLS O VISAO ACURADA
+    set linedelay 2000
+            send F2                   // Najmun
+            send F3                   // Precisao
+            send F4                   // Visao Acurada
+    set linedelay 1000
+            send F5                   // Pocao da Destruicao
+            send F6                   // Pocao da Defesa
+            send F7                   // Protecao da Deusa
+            send F8                   // Gato Preto
+end_while
 
 ///////////// LEMBRANDO QUE OS (IF E WHILE E MOVE) HÁ DE REPOSICIONAR OS PIXELS
