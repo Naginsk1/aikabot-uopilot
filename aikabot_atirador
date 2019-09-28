@@ -30,7 +30,7 @@ end_if
 /////////////////////////// USAR ITEM DO EVENTO ///////////////////////////
             send 4                    // Usar item do evento
 /////////////////////////// BUFFS ///////////////////////////
-while 937, 981 531252                 // LINKAR NAS SKILLS O VISAO ACURADA
+if 937, 981 531252                    // LINKAR NAS SKILLS O VISAO ACURADA
     set linedelay 2000
             send F2                   // Najmun
             send F3                   // Precisao
@@ -40,5 +40,5 @@ while 937, 981 531252                 // LINKAR NAS SKILLS O VISAO ACURADA
             send F6                   // Pocao da Defesa
             send F7                   // Protecao da Deusa
             send F8                   // Gato Preto
-end_while
+end_if
 ///////////// LEMBRANDO QUE OS (IF E WHILE E MOVE) HÁ DE REPOSICIONAR OS PIXELS
