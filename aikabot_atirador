@@ -1,0 +1,28 @@
+Repeat 10                         //repete 10 vezes
+   :main                          //main script part
+ if 163, 48 1051804             //identifica se seu personagem esta saudavel
+       send tab                   //proximo target
+/////////////////////////// COMANDO DO BOT DE ATAQUE ///////////////////////////
+           Repeat  8
+      send 1                      //Tiro padrao
+        send 2                    //Andar para Frente
+          End_Repeat
+ /////////////////////////// FIM DO IF ///////////////////////////
+  end_if
+/////////////////////////// ESTIVER LOW ///////////////////////////
+ if 162, 48  1775684        //identifica se seu personagem esta saudavel
+       send tab
+       while 162, 48  1775684     //se identificar ele executa o comando
+       Repeat 10
+        send 3                    //Inspirar Matanca
+        send 1
+        send 2                    //Andar para Frente
+        end_repeat
+        end_while
+ end_if
+/////////////////////////// FECHAR CTE ///////////////////////////
+          send ss
+          send esc
+/////////////////////////// USAR ITEM DO EVENTO ///////////////////////////
+          send 4  //
+End_Repeat
