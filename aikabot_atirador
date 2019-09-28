@@ -26,3 +26,7 @@ Repeat 10                         //repete 10 vezes
 /////////////////////////// USAR ITEM DO EVENTO ///////////////////////////
           send 4  //
 End_Repeat
+
+
+
+///////////// LEMBRANDO QUE OS (IF E WHILE) HÁ DE REPOSICIONAR OS PIXELS.
