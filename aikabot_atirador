@@ -45,7 +45,9 @@ end_if
 /////////////////////////// SENAO ACHAR TARGET ELE VIRA A CAMERA ///////////////////////////
 showwindow
 if_not 720, 42 1051804                // ++++ ARRUMAR UMA FORMA DE REPRODUZIR O COMANDO DEPOIS DE 3 SEGUNDOS SEM TARGET
-            send dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+    repeat 88                         // GIRAR 180 GRAUS A CAMERA
+            send d
+    end_repeat
 end_if
 stop_script
 ///////////// LEMBRANDO QUE OS (IF E WHILE E MOVE) HÁ DE REPOSICIONAR OS PIXELS
