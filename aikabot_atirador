@@ -1,14 +1,27 @@
-if 163, 46 2170962                   //identifica se seu personagem esta saudavel
-            send tab                  //proximo target
+/////////////////////////// BUFFS ///////////////////////////
+if 891, 983  11718105                 // LINKAR NAS SKILLS O VISAO ACURADA
+    while 891, 983 11718105           // LINKAR NAS SKILLS O VISAO ACURADA
+        set linedelay 2000
+            send F2                   // Najmun
+            send F3                   // Precisao
+            send F4                   // Visao Acurada
+        set linedelay 1000
+            send F5                   // Pocao da Destruicao
+            send F6                   // Pocao da Defesa
+            send F7                   // Protecao da Deusa
+            send F8                   // Gato Preto
+    end_while
+end_if
+/////////////////////////// IDENTIFICAR MOB ///////////////////////////
+             send tab                  //proximo target
 /////////////////////////// COMANDO DO BOT DE ATAQUE ///////////////////////////
         set linedelay 1000
             send 1
         set linedelay 100
-    Repeat  4
+    Repeat  6
             send 1                    //Tiro padrao
             send 2                    //Andar para Frente
     End_Repeat
-end_if
 /////////////////////////// ESTIVER LOW ///////////////////////////
 if 162, 46   2170962                  //identifica se seu personagem esta saudavel
             send tab
@@ -25,20 +38,14 @@ if 162, 46   2170962                  //identifica se seu personagem esta saudav
     end_while
 end_if
 /////////////////////////// DAR BACK E FECHAR CTE ///////////////////////////
-            send s                    // Voltar para o local de origem
-            send esc                  // Fechar CTE
+            send ss                    // Voltar para o local de origem
+            send esc                   // Fechar CTE
 /////////////////////////// USAR ITEM DO EVENTO ///////////////////////////
             send 4                    // Usar item do evento
-/////////////////////////// BUFFS ///////////////////////////
-if 937, 981 531252                    // LINKAR NAS SKILLS O VISAO ACURADA
-    set linedelay 2000
-            send F2                   // Najmun
-            send F3                   // Precisao
-            send F4                   // Visao Acurada
-    set linedelay 1000
-            send F5                   // Pocao da Destruicao
-            send F6                   // Pocao da Defesa
-            send F7                   // Protecao da Deusa
-            send F8                   // Gato Preto
+/////////////////////////// SENAO ACHAR TARGET ELE VIRA A CAMERA ///////////////////////////
+showwindow
+if_not 720, 42 1051804 5000
+            send dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 end_if
+stop_script
 ///////////// LEMBRANDO QUE OS (IF E WHILE E MOVE) HÁ DE REPOSICIONAR OS PIXELS
