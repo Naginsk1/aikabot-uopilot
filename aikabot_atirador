@@ -44,7 +44,7 @@ end_if
             send 4                    // Usar item do evento
 /////////////////////////// SENAO ACHAR TARGET ELE VIRA A CAMERA ///////////////////////////
 showwindow
-if_not 720, 42 1051804 5000
+if_not 720, 42 1051804                // ++++ ARRUMAR UMA FORMA DE REPRODUZIR O COMANDO DEPOIS DE 3 SEGUNDOS SEM TARGET
             send dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 end_if
 stop_script
