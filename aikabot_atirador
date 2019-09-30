@@ -18,20 +18,20 @@ end_if
         set linedelay 1000
             send 1
         set linedelay 100
-    Repeat  6
+    Repeat  10
             send 1                    //Tiro padrao
             send 2                    //Andar para Frente
     End_Repeat
 /////////////////////////// ESTIVER LOW ///////////////////////////
 if 162, 46   2170962                  //identifica se seu personagem esta saudavel
-            send tab
     while 162, 48  1775684            //se identificar ele executa o comando
+        send tab
             send 3                    // INSPIRAR MATANCA
             send 5                    // DETONACAO
             double_left 956, 556      // CLICK MOUSE
             send 6                    // NAPALM
             double_left 956, 556      // CLICK MOUSE
-        Repeat 2
+        Repeat 5
             send 1                    //Tiro padrao
             send 2                    //Andar para Frente
         end_repeat
@@ -43,11 +43,17 @@ end_if
 /////////////////////////// USAR ITEM DO EVENTO ///////////////////////////
             send 4                    // Usar item do evento
 /////////////////////////// SENAO ACHAR TARGET ELE VIRA A CAMERA ///////////////////////////
-showwindow
-if_not 720, 42 1051804                // ++++ ARRUMAR UMA FORMA DE REPRODUZIR O COMANDO DEPOIS DE 3 SEGUNDOS SEM TARGET
-    repeat 88                         // GIRAR 180 GRAUS A CAMERA
-            send d
-    end_repeat
+            send tab
+if_not 720, 42 1051804                // ++++ ARRUMAR UMA FORMA DE REPRODUZIR O COMANDO DEPOIS DE 3 SEGUNDOS SEM TARGET                         // GIRAR 180 GRAUS A CAMERA
+            send ddddddddddddddddddddddddddddddddd
 end_if
-stop_script
+if 720, 42 1051804
+    set linedelay 1000
+            send 1
+        set linedelay 100
+    Repeat  10
+            send 1                    //Tiro padrao
+            send 2                    //Andar para Frente
+    End_Repeat
+end_if
 ///////////// LEMBRANDO QUE OS (IF E WHILE E CLICKS DO MOUSE) HÁ DE REPOSICIONAR OS PIXELS
