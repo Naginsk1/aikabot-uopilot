@@ -2,14 +2,16 @@
 if 891, 983  11718105                 // LINKAR NAS SKILLS O VISAO ACURADA
     while 891, 983 11718105           // LINKAR NAS SKILLS O VISAO ACURADA
         set linedelay 2000
-            send F2                   // Najmun
-            send F3                   // Precisao
-            send F4                   // Visao Acurada
+            send F1                   // Najmun
+            send F2                   // Precisao
+            send F3                   // Visao Acurada
         set linedelay 1000
+            send F4                   // Buque de Rosas Brancas
             send F5                   // Pocao da Destruicao
             send F6                   // Pocao da Defesa
             send F7                   // Protecao da Deusa
             send F8                   // Gato Preto
+            send F9                   // Pran
     end_while
 end_if
 /////////////////////////// IDENTIFICAR MOB ///////////////////////////
@@ -18,7 +20,7 @@ end_if
         set linedelay 1000
             send 1
         set linedelay 100
-    Repeat  10
+    Repeat  5
             send 1                    //Tiro padrao
             send 2                    //Andar para Frente
     End_Repeat
@@ -31,7 +33,7 @@ if 162, 46   2170962                  //identifica se seu personagem esta saudav
             double_left 956, 556      // CLICK MOUSE
             send 6                    // NAPALM
             double_left 956, 556      // CLICK MOUSE
-        Repeat 5
+        Repeat 2
             send 1                    //Tiro padrao
             send 2                    //Andar para Frente
         end_repeat
@@ -40,19 +42,19 @@ end_if
 /////////////////////////// DAR BACK E FECHAR CTE ///////////////////////////
             send ss                    // Voltar para o local de origem
             send esc                   // Fechar CTE
+            send tab
 /////////////////////////// USAR ITEM DO EVENTO ///////////////////////////
             send 4                    // Usar item do evento
 /////////////////////////// SENAO ACHAR TARGET ELE VIRA A CAMERA ///////////////////////////
-            send tab
-if_not 720, 42 1051804                // ++++ ARRUMAR UMA FORMA DE REPRODUZIR O COMANDO DEPOIS DE 3 SEGUNDOS SEM TARGET                         // GIRAR 180 GRAUS A CAMERA
-            send ddddddddddddddddddddddddddddddddd
+if_not 644, 21 5855315                // ++++ ARRUMAR UMA FORMA DE REPRODUZIR O COMANDO DEPOIS DE 3 SEGUNDOS SEM TARGET
+            send dddddddddddddddd
 end_if
 /////////////////////////// VOLTA O COMANDO DE MATAR OS MOBS ///////////////////////////
-if 720, 42 1051804
+if 644, 21 5855315
     set linedelay 1000
             send 1
         set linedelay 100
-    Repeat  10
+    Repeat  5
             send 1                    //Tiro padrao
             send 2                    //Andar para Frente
     End_Repeat
