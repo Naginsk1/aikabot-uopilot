@@ -47,6 +47,7 @@ end_if
 if_not 720, 42 1051804                // ++++ ARRUMAR UMA FORMA DE REPRODUZIR O COMANDO DEPOIS DE 3 SEGUNDOS SEM TARGET                         // GIRAR 180 GRAUS A CAMERA
             send ddddddddddddddddddddddddddddddddd
 end_if
+/////////////////////////// VOLTA O COMANDO DE MATAR OS MOBS ///////////////////////////
 if 720, 42 1051804
     set linedelay 1000
             send 1
