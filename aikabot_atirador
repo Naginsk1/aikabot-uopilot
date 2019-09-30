@@ -3,15 +3,15 @@ if 891, 983  11718105                 // LINKAR NAS SKILLS O VISAO ACURADA
     while 891, 983 11718105           // LINKAR NAS SKILLS O VISAO ACURADA
         set linedelay 2000
             send F1                   // Najmun
-            send F2                   // Precisao
-            send F3                   // Visao Acurada
+            send F2                   // Visao Acurada
+            send F3                   // Precisao
         set linedelay 1000
             send F4                   // Buque de Rosas Brancas
             send F5                   // Pocao da Destruicao
             send F6                   // Pocao da Defesa
             send F7                   // Protecao da Deusa
             send F8                   // Gato Preto
-            send F9                   // Pran
+            send F9                   // Comida da Pran
     end_while
 end_if
 /////////////////////////// IDENTIFICAR MOB ///////////////////////////
