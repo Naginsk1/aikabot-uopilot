@@ -1,0 +1,31 @@
+/////////////////////////// IDENTIFICAR MOB ///////////////////////////
+             send tab                  //proximo target
+/////////////////////////// COMANDO DO BOT DE ATAQUE ///////////////////////////
+        set linedelay 2000
+            send 1
+        set linedelay 100
+    Repeat  3
+            send 1                    //Tiro padrao
+            send 2                    //Andar para Frente
+    End_Repeat
+/////////////////////////// DAR BACK E FECHAR CTE ///////////////////////////
+            send ss                    // Voltar para o local de origem
+            send esc                   // Fechar CTE
+            send tab
+/////////////////////////// USAR ITEM DO EVENTO ///////////////////////////
+            send 4                    // Usar item do evento
+/////////////////////////// SENAO ACHAR TARGET ELE VIRA A CAMERA ///////////////////////////
+if_not 450, 249 , 21 13683859                // ++++ ARRUMAR UMA FORMA DE REPRODUZIR O COMANDO DEPOIS DE 3 SEGUNDOS SEM TARGET
+            send dddddddddddddddd
+end_if
+/////////////////////////// VOLTA O COMANDO DE MATAR OS MOBS ///////////////////////////
+if 450, 249 , 21 13683859
+    set linedelay 2000
+            send 1
+        set linedelay 100
+    Repeat  3
+            send 1                    //Tiro padrao
+            send 2                    //Andar para Frente
+    End_Repeat
+end_if
+///////////// LEMBRANDO QUE OS (IF E WHILE E CLICKS DO MOUSE) HÁ DE REPOSICIONAR OS PIXELS
